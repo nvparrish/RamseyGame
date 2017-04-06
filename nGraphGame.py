@@ -92,7 +92,7 @@ def play(e):
   play.player = (play.player + 1) % 2
   t = TreeNode(play.a, play.ps[0], play.ps[1], play.player+1)
   t.simulate()
-  print('It is now player ', play.player+1 '\'s turn. Strategy is as follows:')
+  print('It is now player ', play.player+1,  '\'s turn. Strategy is as follows:')
   print('Winning plays')
   t.getWinningPlays()
   print('Draw plays')
