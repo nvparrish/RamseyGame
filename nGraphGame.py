@@ -99,13 +99,19 @@ def play(e):
   t.getDrawPlays()
   print('Losing plays')
   t.getLosingPlays()
+
+def startGame():
+  play.player = 0
+  play.a = generateSet(5)
+  play.ps = [set(), set()]
+  print('New game. It is now player 1\'s turn')
   
 play.player = 0
 play.a = generateSet(5)
 play.ps = [set(), set()]
 
 if __name__ == "__main__":
-  n = 5
+  n = 6
   a = generateSet(n)
   print(a)
 
